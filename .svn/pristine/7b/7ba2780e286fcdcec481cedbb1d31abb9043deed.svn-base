@@ -1,0 +1,34 @@
+//
+//  GKTextView.h
+//  BMComLibrary
+//
+//  Created by king on 16/8/4.
+//  Copyright © 2016年 kennyhuang. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@protocol GKTextViewDelegate <NSObject>
+
+@optional
+- (void)gkTextViewDidChange:(UITextView *)textView;
+- (BOOL)gkTextView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text;
+@end
+
+
+
+
+@interface GKTextView : UIView
+
+@property (nonatomic ,weak) id<GKTextViewDelegate> delegate;
+
+@property (nonatomic ,strong) UILabel *placeHolderLbl;
+
+//default input length is 10000
+@property (nonatomic ,assign) uint maxStingLength;
+
+@property (nonatomic ,strong) NSString *inputText;
+
+@property (nonatomic ,assign) CGFloat textFont;
+
+@end

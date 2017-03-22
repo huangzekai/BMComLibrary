@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "bee4ed0a-d300-11e4-a815-4579d319f4d5++851",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "bee4ed0a-d300-11e4-a815-4579d319f4d5++851" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "bee4ed0a-d300-11e4-a815-4579d319f4d5++851" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EC73BF8A-9BFD-4166-AB09-D9E5E48D73FA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "bee4ed0a-d300-11e4-a815-4579d319f4d5++851" : "BMComLibrary\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BMComLibrary",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BMComLibrary.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/code.bemetoy.com\/repos\/IOS",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "bee4ed0a-d300-11e4-a815-4579d319f4d5++851"
+    }
+  ]
+}

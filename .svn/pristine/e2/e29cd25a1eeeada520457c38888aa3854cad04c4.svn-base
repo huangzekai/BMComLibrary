@@ -1,0 +1,58 @@
+//
+//  GKTextViewDemoController.m
+//  BMComLibrary
+//
+//  Created by king on 16/8/4.
+//  Copyright © 2016年 kennyhuang. All rights reserved.
+//
+
+#import "GKTextViewDemoController.h"
+#import "GKTextView.h"
+
+@interface GKTextViewDemoController ()<GKTextViewDelegate>
+
+@property (nonatomic ,strong) GKTextView *textView;
+
+@property (nonatomic ,strong) UIButton *btn;
+
+@end
+
+
+@implementation GKTextViewDemoController
+
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    self.textView.placeHolderLbl.text = @"提示文字提示文字提示文字提示文字";
+    [self.view addSubview:self.textView];
+    
+    
+    self.btn = [[UIButton alloc] initWithFrame:CGRectMake(30, 80, 80, 40)];
+    [self.btn setTitle:@"点我打印" forState:UIControlStateNormal];
+    [self.btn addTarget:self action:@selector(didClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.btn];
+    
+}
+
+- (void)didClick
+{
+    NSLog(@"%@",self.textView.inputText);
+}
+
+- (GKTextView *)textView
+{
+    if (!_textView) {
+        _textView = [[GKTextView alloc] initWithFrame:CGRectMake(15, 300, 330, 90)];
+        _textView.maxStingLength = 20;
+        _textView.delegate = self;
+    }
+    return _textView;
+}
+
+
+
+@end
